@@ -1,4 +1,4 @@
-package guru.qa;
+package guru.qa.tests;
 
 import org.junit.jupiter.api.*;
 
@@ -13,10 +13,12 @@ public class FirstTest {
     void setUp() {
         System.out.println("before each method");
     }
+
     @AfterEach
     void tearDown() {
         System.out.println("after all");
     }
+
     @Test
     void firstTest() {
         System.out.println("@test");
